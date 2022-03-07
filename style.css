@@ -1,0 +1,165 @@
+:root { 
+    --very-dark-magenta: hsl(300, 43%, 22%); 
+    --dark-magenta: hsl(303, 10%, 53%); 
+    --light-magenta: hsl(300, 24%, 96%);
+    --soft-pink: hsl(333, 80%, 67%); 
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.parent {
+    background-image: url(../img/bg-pattern-top-desktop.svg),url(../img/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto,100%;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.sccon {
+    flex-direction: row;
+    margin-top: 4%;
+   
+}
+.paragraph {
+    width: 50%;
+    color: var(--dark-magenta);
+}
+H1 {
+    
+    color: var( --very-dark-magenta);
+}
+.ratecon {
+    margin-top: 5%;
+    flex-direction: column;
+    width: 50%;
+    font-weight: bold;
+}
+.rate {
+    flex-direction: row;
+    overflow: hidden;
+    background-color: var( --light-magenta);
+    color: var( --very-dark-magenta) ;
+    height: fit-content;
+    width: 80%;
+    padding:  2% 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+#rate2 {
+    margin-left: 10% ;
+}
+#rate3 {
+    margin-left: 20% ;
+}
+.starcon {
+    flex-direction: row;
+    margin-top: 3%;  
+    margin-right: 3%; 
+}
+.r5s {
+    margin-bottom: 3%;
+    margin-top: 3%; 
+}
+.star {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+}
+.buycon {
+    flex-direction: row;
+    width: 100%;
+}
+
+.buyers {
+    height: fit-content;
+    width: calc(100/3);
+    background-color: var( --very-dark-magenta);
+    border-radius: 10px;
+    padding: 2%;
+    color: var(--light-magenta);
+}
+
+.profil {
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.avatar {
+    float: left;
+    flex-direction: row;
+    margin-right: 5%;
+    border-radius: 50%;
+    width: 15%; height: 15%;
+    vertical-align: top;
+}
+
+.colored {
+    color: var(--soft-pink);
+}
+#b1 {
+    margin-top: 1% ;
+    margin-right: 3%;
+}
+#b2 {
+    margin-top: 2% ;
+    margin-right: 3%;
+}
+#b3 {
+    margin-top: 3% ;
+}
+p {
+    margin-top: 6%;
+}
+@media (max-width: 575px) {
+    .container {
+        flex-direction: column;
+    }
+    .sccon {
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .buycon {
+        flex-direction: column;
+    }
+    .paragraph {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .ratecon {
+        width: 100%;
+    }
+    .rate {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    #rate2 {
+        margin-left: 0 ;
+    }
+    #rate3 {
+        margin-left: 0 ;
+    }
+    .buyers {
+        padding: 5%;
+    }
+    #b1 {
+        margin-right: 0%;
+        margin-bottom: 3%;
+    }
+    #b2 {
+        margin-right: 0%;
+        margin-bottom: 3%;
+    }
+
+}
